@@ -51,17 +51,17 @@ document.addEventListener('DOMContentLoaded', function () {
         function updateCoffeImages() {
             try {
                 if (currentIndex % 3 === 0) {
-                    coffeFull.src = "/pictures/svg/coffe-full.svg";
-                    coffeEmpty.src = "/pictures/svg/coffe-empty.svg";
-                    coffeEmptySecond.src = "/pictures/svg/coffe-empty.svg";
+                    coffeFull.src = "./pictures/svg/coffe-full.svg";
+                    coffeEmpty.src = "./pictures/svg/coffe-empty.svg";
+                    coffeEmptySecond.src = "./pictures/svg/coffe-empty.svg";
                 } else if (currentIndex % 3 === 1) {
-                    coffeFull.src = "/pictures/svg/coffe-empty.svg";
-                    coffeEmpty.src = "/pictures/svg/coffe-full.svg";
-                    coffeEmptySecond.src = "/pictures/svg/coffe-empty.svg";
+                    coffeFull.src = "./pictures/svg/coffe-empty.svg";
+                    coffeEmpty.src = "./pictures/svg/coffe-full.svg";
+                    coffeEmptySecond.src = "./pictures/svg/coffe-empty.svg";
                 } else {
-                    coffeFull.src = "/pictures/svg/coffe-empty.svg";
-                    coffeEmpty.src = "/pictures/svg/coffe-empty.svg";
-                    coffeEmptySecond.src = "/pictures/svg/coffe-full.svg";
+                    coffeFull.src = "./pictures/svg/coffe-empty.svg";
+                    coffeEmpty.src = "./pictures/svg/coffe-empty.svg";
+                    coffeEmptySecond.src = "./pictures/svg/coffe-full.svg";
                 }
             } catch (error) {
                 console.error("An unexpected error occurred in updateCoffeImages function:", error);
