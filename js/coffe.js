@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
         var imgElement = document.querySelector('.coffe__grid_img img');
 
         var imagePaths = [
-            '/pictures/jpg/kava-zerno',
-            '/pictures/jpg/kava-bez-kof',
-            '/pictures/jpg/kava-melena',
-            '/pictures/jpg/kava-rozchin'
+            './pictures/jpg/kava-zerno',
+            './pictures/jpg/kava-bez-kof',
+            './pictures/jpg/kava-melena',
+            './pictures/jpg/kava-rozchin'
         ];
 
         imgElement.setAttribute('srcset', getDefaultImageSrcset());
-        imgElement.setAttribute('src', '/pictures/jpg/kava-rozchin.jpg');
+        imgElement.setAttribute('src', './pictures/jpg/kava-rozchin.jpg');
 
         coffeeLinks.forEach(function (link, index) {
             try {
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function getDefaultImageSrcset() {
             return (
-                '/pictures/jpg/kava-rozchin-mob.jpg 767w, ' +
-                '/pictures/jpg/kava-rozchin-tablet.jpg 1023w, ' +
-                '/pictures/jpg/kava-rozchin.jpg 1024w'
+                './pictures/jpg/kava-rozchin-mob.jpg 767w, ' +
+                './pictures/jpg/kava-rozchin-tablet.jpg 1023w, ' +
+                './pictures/jpg/kava-rozchin.jpg 1024w'
             );
         }
 
