@@ -1,0 +1,741 @@
+@media (max-width: 767px) {
+    .container {
+        padding: 12px 23px;
+    }
+    .contract {
+        padding: 17px 23px;
+        background-color: var(--basket-item-color);
+    }
+
+    .container__name {
+        font-size: 12.5px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 14px;
+    }
+
+    .container__name:last-child,
+    .contract-box__name {
+        font-size: 11.5px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .contract-box {
+        
+            padding: 0px 14px 0px 14px;
+        
+    }
+
+    .contract-box__name {
+        padding-bottom: 18px;
+    }
+
+    .contract-box__title {
+        font-size: 11.5px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .contract-box__title {
+        margin-bottom: 14px;
+    }
+
+    .contract-box__list {
+        padding-bottom: 40px;
+    }
+
+    .contract-box__item {
+    }
+
+    .contract-box__item > .contract-box__title {
+        margin-bottom: 0;
+    }
+    .contract-box__cir {
+        display: flex;
+    }
+    .contract-box__cir::before {
+        content: "•";
+        font-size: 36px;
+        line-height: 0;
+        margin-top: 5px;
+        margin-right: 5px;
+        color: var(--accent-color);
+    }
+
+    .citation {
+        position: relative;
+    }
+
+    .citation__container {
+        border: 2px solid var(--table-gray-color);
+        border-radius: 45px 1px;
+    }
+
+    .citation__title {
+        font-size: 12.5px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-style: italic;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: justifyLeft;
+        padding: 18px;
+    }
+
+    .citation__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+
+        background-color: var(--basket-item-color);
+    }
+
+    .citation__img img {
+        width: 18px;
+        height: 16px;
+    }
+
+    .citation__img:first-of-type {
+        bottom: -10px;
+        left: -10px;
+    }
+
+    .citation__img:last-of-type {
+        top: -10px;
+        right: -10px;
+    }
+
+    .check__forma-label {
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11.67px;
+        line-height: 1.2;
+    }
+    .check__forma-title {
+        margin-bottom: 8px;
+    }
+
+    .check__lable-name {
+        font-size: 12px;
+
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-top: 38px;
+        padding-bottom: 9px;
+    }
+
+    .check__forma-select {
+        z-index: 3;
+        width: 100%;
+        background-color: var(--white);
+        color: var(--black);
+        font-size: 9.58px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        border-radius: 0;
+        border: 0;
+        cursor: pointer;
+        display: none;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+    .check__forma-select p {
+        padding-left: 8px;
+    }
+    .check__forma-label-div {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11.67px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+    .check__forma-label-div.is-active .check__forma-select {
+        display: block;
+    }
+    .check__forma__current {
+        color: var(--black);
+        font-size: 9.58px;
+        line-height: 1.2;
+    }
+    .select__header {
+        background-color: var(--white);
+        color: var(--black);
+        padding: 12px 20px 12px 15px;
+        font-size: 9.58px;
+        line-height: 1.2;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .check__forma-svg {
+        z-index: 2;
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        margin-left: auto;
+        text-align: center;
+        width: 8px;
+        height: 6px;
+    }
+
+    .check__forma-option {
+        cursor: pointer;
+        width: 100%;
+        padding: 12px 0;
+    }
+    .check__forma-option:hover,
+    .check__forma-option:focus {
+        background-color: var(--orange);
+    }
+
+    .after-pay {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 39px 65px;
+    }
+    .contract {
+        padding: 69px 42px;
+        background-color: var(--basket-item-color);
+    }
+
+    .container__name {
+        font-size: 18.75px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 51px;
+    }
+
+    .container__name:last-child,
+    .contract-box__name {
+        font-size: 16.67px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 28px;
+    }
+
+    .contract-box {
+        padding: 0px 14px 0px 14px;
+    }
+
+    .contract-box__name {
+        padding-bottom: 18px;
+    }
+
+    .contract-box__title {
+        font-size: 16.67px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .contract-box__title {
+        margin-bottom: 23px;
+    }
+
+    .contract-box__list {
+        padding-bottom: 40px;
+    }
+
+    .contract-box__item > .contract-box__title {
+        margin-bottom: 0;
+    }
+    .contract-box__cir {
+        display: flex;
+    }
+    .contract-box__cir::before {
+        content: "•";
+        font-size: 50px;
+        line-height: 0;
+        margin-top: 5px;
+        margin-right: 5px;
+        color: var(--accent-color);
+    }
+
+    .citation {
+        position: relative;
+    }
+
+    .citation__container {
+        border: 2px solid var(--title-accent-color);
+        border-radius: 45px 1px;
+    }
+
+    .citation__title {
+        font-size: 18.75px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-style: italic;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding: 40px 54px;
+    }
+
+    .citation__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 65px;
+        height: 65px;
+
+        background-color: var(--basket-item-color);
+    }
+
+    .citation__img img {
+        width: 38px;
+        height: 33px;
+    }
+
+    .citation__img:first-of-type {
+        bottom: -10px;
+        left: -10px;
+    }
+
+    .citation__img:last-of-type {
+        top: -10px;
+        right: -10px;
+    }
+
+.check{
+    width: 40%;
+}
+
+    .check__forma-label {
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11.67px;
+        line-height: 1.2;
+    }
+    .check__forma-title {
+        margin-bottom: 8px;
+    }
+
+    .check__lable-name {
+        font-size: 12px;
+
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-top: 38px;
+        padding-bottom: 9px;
+    }
+
+    .check__forma-select {
+        z-index: 3;
+        width: 100%;
+        background-color: var(--white);
+        color: var(--black);
+        font-size: 9.58px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        border-radius: 0;
+        border: 0;
+        cursor: pointer;
+        display: none;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+    .check__forma-select p {
+        padding-left: 8px;
+    }
+    .check__forma-label-div {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11.67px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+    .check__forma-label-div.is-active .check__forma-select {
+        display: block;
+    }
+    .check__forma__current {
+        color: var(--black);
+        font-size: 9.58px;
+        line-height: 1.2;
+    }
+    .select__header {
+        background-color: var(--white);
+        color: var(--black);
+        padding: 12px 20px 12px 15px;
+        font-size: 9.58px;
+        line-height: 1.2;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .check__forma-svg {
+        z-index: 2;
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        margin-left: auto;
+        text-align: center;
+        width: 8px;
+        height: 6px;
+    }
+
+    .check__forma-option {
+        cursor: pointer;
+        width: 100%;
+        padding: 12px 0;
+    }
+    .check__forma-option:hover,
+    .check__forma-option:focus {
+        background-color: var(--orange);
+    }
+
+    .after-pay {
+    }
+    .after-pay__name {
+        font-size: 16.67px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: justifyLeft;
+        padding-top: 38px;
+        padding-bottom: 44px;
+    }
+    .after-pay__box {
+        display: flex;
+        align-items: center;
+    }
+
+    .after-pay__box:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .after-pay__cifr {
+        font-size: 37.5px;
+        font-family: "Montserrat";
+        color: var(--bottom-accent-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: justifyLeft;
+        margin-right: 22px;
+    }
+    .after-pay__title {
+        font-size: 16.667px;
+        font-family: "Montserrat";
+        color: var(--primary-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: justifyLeft;
+        border-radius: 40px;
+        padding: 16px 0px 16px 45px;
+        background-color: var(--table-gray-color);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 39px 65px;
+    }
+    .contract {
+        padding: 69px 42px;
+   
+    }
+
+    .container__name {
+        font-size: 18.75px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 51px;
+    }
+
+    .container__name:last-child,
+    .contract-box__name {
+        font-size: 16.91px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 28px;
+    }
+
+    .contract-box {
+        padding: 0px 14px 0px 14px;
+    }
+
+    .contract-box__name {
+        padding-bottom: 18px;
+    }
+
+    .contract-box__title {
+        font-size: 16.91px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .contract-box__title {
+        margin-bottom: 23px;
+    }
+
+    .contract-box__list {
+        padding-bottom: 40px;
+    }
+
+    .contract-box__item > .contract-box__title {
+        margin-bottom: 0;
+    }
+    .contract-box__cir {
+        display: flex;
+    }
+    .contract-box__cir::before {
+        content: "•";
+        font-size: 50px;
+        line-height: 0;
+        margin-top: 5px;
+        margin-right: 5px;
+        color: var(--accent-color);
+    }
+
+    .citation {
+        position: relative;
+    }
+
+    .citation__container {
+        border: 2px solid var(--title-accent-color);
+        border-radius: 45px 1px;
+        text-align: center;
+    }
+
+    .citation__title {
+        font-size: 20.83px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-style: italic;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding: 56px 67px;
+    }
+
+    .citation__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 65px;
+        height: 65px;
+
+        background-color: var(--primary-background-color);
+    }
+
+    .citation__img img {
+        width: 38px;
+        height: 33px;
+    }
+
+    .citation__img:first-of-type {
+        bottom: -10px;
+        left: -10px;
+    }
+
+    .citation__img:last-of-type {
+        top: -10px;
+        right: -10px;
+    }
+
+.check{
+    width: 30%;
+}
+
+    .check__forma-label {
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11.67px;
+        line-height: 1.2;
+    }
+    .check__forma-title {
+        margin-bottom: 8px;
+    }
+
+    .check__lable-name {
+        font-size: 12px;
+
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: left;
+        padding-top: 38px;
+        padding-bottom: 9px;
+    }
+
+    .check__forma-select {
+        z-index: 3;
+        width: 100%;
+        background-color: var(--white);
+        color: var(--black);
+        font-size: 9.58px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        border-radius: 0;
+        border: 0;
+        cursor: pointer;
+        display: none;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+    .check__forma-select p {
+        padding-left: 8px;
+    }
+    .check__forma-label-div {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11.67px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+    .check__forma-label-div.is-active .check__forma-select {
+        display: block;
+    }
+    .check__forma__current {
+        color: var(--black);
+        font-size: 9.58px;
+        line-height: 1.2;
+    }
+    .select__header {
+        background-color: var(--white);
+        color: var(--black);
+        padding: 12px 20px 12px 15px;
+        font-size: 9.58px;
+        line-height: 1.2;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .check__forma-svg {
+        z-index: 2;
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        margin-left: auto;
+        text-align: center;
+        width: 8px;
+        height: 6px;
+    }
+
+    .check__forma-option {
+        cursor: pointer;
+        width: 100%;
+        padding: 12px 0;
+    }
+    .check__forma-option:hover,
+    .check__forma-option:focus {
+        background-color: var(--orange);
+    }
+
+    .after-pay {
+    }
+    .after-pay__name {
+        font-size: 16.67px;
+        font-family: "Montserrat";
+        color: var(--title-text-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: justifyLeft;
+        padding-top: 38px;
+        padding-bottom: 44px;
+    }
+    .after-pay__box {
+        display: flex;
+        align-items: center;
+    }
+
+    .after-pay__box:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .after-pay__cifr {
+        font-size: 37.5px;
+        font-family: "Montserrat";
+        color: var(--bottom-accent-color);
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: justifyLeft;
+        margin-right: 22px;
+    }
+    .after-pay__title {
+        font-size: 16.667px;
+        font-family: "Montserrat";
+        color: var(--primary-text-color);
+        font-variant: small-caps;
+        line-height: 1.2;
+        text-align: justifyLeft;
+        border-radius: 40px;
+        width: 100%;
+        padding: 16px 0px 16px 45px;
+        background-color: var(--table-gray-color);
+    }
+}

@@ -1,0 +1,85 @@
+/*Начало БИБЛИОТЕКА */
+.fa-heart-o {
+    font-size: 20px;
+
+    color: red;
+    cursor: pointer;
+}
+
+.fa-heart {
+    font-size: 20px;
+
+    color: red;
+    cursor: pointer;
+}
+
+.fa.fa-heart-o {
+    font-size: 20px;
+}
+/*Конец БИБЛИОТЕКА */
+
+/* Рейтинг начало*/
+.rating-area {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 120px;
+}
+.rating-area:not(:checked) > input {
+    display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 15px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 15px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+    content: "★";
+}
+.rating-area > input:checked ~ label {
+    color: var(--accent-color);
+    text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+    color: var(--accent-color);
+    text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+    position: relative;
+}
+/* Вывод рейтингп */
+.rating-mini {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 120px;
+    font-size: 0;
+}
+.rating-mini span {
+    /* padding: 0; */
+    font-size: 20px;
+    line-height: 1;
+    color: var(--accent-color);
+}
+.rating-mini > span:before {
+    content: "★";
+}
+.rating-mini > span.active {
+    color: var(--title-accent-color);
+}
+/* Рейтинг Конец */

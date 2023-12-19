@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ПанСтакан</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Mulish&family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/rating-star.css" />
+        <link rel="stylesheet" href="../css/item-not.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header__top">
+                    <div>
+                        <a href=""
+                            ><img
+                                class="header__logo"
+                                src="/pictures/png/logologo.png"
+                                alt="logo"
+                        /></a>
+                    </div>
+                    <div class="header__search">
+                        <input class="header__input" type="text" />
+                        <button class="header__search_button" type="button">
+                            <img
+                                class="header__search--s"
+                                src="/pictures/svg/search.svg"
+                                alt="search"
+                            />
+                        </button>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__mail header__contact">
+                            <a href="mailto:brand.panstakan@gmail.com"
+                                ><img
+                                    class="header__mail--svg"
+                                    src="/pictures/svg/mail.svg"
+                                    alt="mail"
+                            /></a>
+                            <a
+                                class="header__mail--flex"
+                                href="mailto:brand.panstakan@gmail.com"
+                                ><span class="header__mail--email"
+                                    >E-mail:
+                                </span>
+                                <span class="header__mail--name"
+                                    >brand.panstakan@gmail.com</span
+                                ></a
+                            >
+                        </div>
+                        <div class="header__favorite header__contact">
+                            <a href=""
+                                ><img
+                                    class="header__favorite--svg"
+                                    src="/pictures/svg/favorite.svg"
+                                    alt="favorites"
+                            /></a>
+                        </div>
+                        <div class="header__basket header__contact">
+                            <a href="./basket.html">
+                                <img
+                                    class="header__basket--svg"
+                                    src="/pictures/svg/basket.svg"
+                                    alt="basket"
+                                />
+                                <span class="basket-counter">+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <!-- Бургер-иконка -->
+
+                        <img
+                            src="/pictures/svg/burger.svg"
+                            alt=""
+                            id="burger-icon"
+                        />
+
+                        <!-- Бургер-меню -->
+                        <div id="burger-menu">
+                            <ul class="header__link">
+                                <li>
+                                    <a
+                                        class="header__link--title"
+                                        href="./catalog.html"
+                                        >Каталог</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Акції</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Про нас</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Прайс</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- Кнопка закрытия меню -->
+                            <div id="close-btn">&times;</div>
+                        </div>
+
+                        <ul class="header__link" id="menu">
+                            <li>
+                                <a
+                                    class="header__link--title"
+                                    href="./catalog.html"
+                                    >Каталог</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header__link--title" href="">Акції</a>
+                            </li>
+                            <li>
+                                <a class="header__link--title" href=""
+                                    >Про нас</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header__link--title" href="">Прайс</a>
+                            </li>
+                            <li>
+                                <a class="header__link--title" href=""
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="header__options">
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Мова</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="1">Валюта</option>
+                                3
+                                <option value="2">Два</option>
+                                4
+                                <option value="3">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Профіль</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="nav-button">
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UA</button
+                            ><button type="button" class="nav-button__button">
+                                RU
+                            </button>
+                        </li>
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UAH</button
+                            ><button type="button" class="nav-button__button">
+                                USD
+                            </button>
+                        </li>
+                    </ul>
+                    <a class="nav-logo" href=""
+                        ><img
+                            class="nav-logo"
+                            src="/pictures/svg/user-log.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="hero__img">
+                <h1 class="hero__name">
+                    Брендування
+                    <br />
+                    <span class="hero__name_second">стаканів</span>
+                </h1>
+                <div class="hero__container">
+                    <picture class="hero__picture">
+                        <source
+                            media="(max-width: 767px)"
+                            srcset="/pictures/jpg/header-baner-mob.jpg"
+                        />
+
+                        <source
+                            media="(min-width: 768px) and (max-width: 1023px)"
+                            srcset="
+                                /pictures/jpg/header-baner-tablet.jpg
+                            "
+                        />
+
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="/pictures/jpg/header-baner.jpg"
+                        />
+
+                        <img
+                            src="/pictures/jpg/header-baner-tablet.jpg"
+                            srcset="/pictures/jpg/header-baner.jpg"
+                            alt="Брендування стаканів"
+                        />
+                    </picture>
+                    <picture class="hero__picture">
+                        <source
+                            media="(max-width: 767px)"
+                            srcset="/pictures/jpg/header-baner-mob.jpg"
+                        />
+
+                        <source
+                            media="(min-width: 768px) and (max-width: 1023px)"
+                            srcset="
+                                /pictures/jpg/header-baner-tablet.jpg
+                            "
+                        />
+
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="/pictures/jpg/header-baner.jpg"
+                        />
+
+                        <img
+                            src="/pictures/jpg/header-baner-tablet.jpg"
+                            srcset="/pictures/jpg/header-baner.jpg"
+                            alt="Брендування стаканів"
+                        />
+                    </picture>
+                    <picture class="hero__picture">
+                        <source
+                            media="(max-width: 767px)"
+                            srcset="/pictures/jpg/header-baner-mob.jpg"
+                        />
+
+                        <source
+                            media="(min-width: 768px) and (max-width: 1023px)"
+                            srcset="
+                                /pictures/jpg/header-baner-tablet.jpg
+                            "
+                        />
+
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="/pictures/jpg/header-baner.jpg"
+                        />
+
+                        <img
+                            src="/pictures/jpg/header-baner-tablet.jpg"
+                            srcset="/pictures/jpg/header-baner.jpg"
+                            alt="Брендування стаканів"
+                        />
+                    </picture>
+                </div>
+
+                <button class="hero__btn" type="submit">
+                    Замовити
+                </button>
+
+                <div class="hero__svg">
+                    <img
+                        class="hero__arrow arrow-left"
+                        src="/pictures/svg/arrow-left.svg"
+                        alt=""
+                    />
+                    <img
+                        class="hero__coffe full"
+                        src="/pictures/svg/coffe-full.svg"
+                        alt=""
+                    />
+                    <img
+                        class="hero__coffe empty"
+                        src="/pictures/svg/coffe-empty.svg"
+                        alt=""
+                    />
+                    <img
+                        class="hero__coffe empty empty-second"
+                        src="/pictures/svg/coffe-empty.svg"
+                        alt=""
+                    />
+                    <img
+                        class="hero__arrow arrow-right"
+                        src="/pictures/svg/arrow-right.svg"
+                        alt=""
+                    />
+                </div>
+                <div></div>
+            </div>
+            <ul class="menu">
+                <li class="menu-item"><a href="">Головна</a></li>
+                <li class="menu-item"><a href="">Каталог</a></li>
+                <li class="menu-item">
+                    <a href="">Сиропи для кави та коктейлів</a>
+                </li>
+                <li class="menu-item">
+                    <a href=""
+                        >Стакан паперовий для кави гофра-хвиля бурий 400мл 15
+                        шт/уп ø91</a
+                    >
+                </li>
+            </ul>
+            <article class="notin-item">
+                <h2 class="notin-item__title">
+                    Стакан паперовий для кави гофра-хвиля бурий 400мл 15 шт/уп
+                    ø91
+                </h2>
+                <div class="notin-item__articul-wrap">
+                    <p class="notin-item__articul">
+                        Артикул: <span>44544</span>
+                    </p>
+                    <img
+                        class="notin-item-stars"
+                        src="/pictures/svg/star.svg"
+                        alt=""
+                        sizes=""
+                        srcset=""
+                    />
+                </div>
+                <picture class="card-item__img">
+                    <source
+                        srcset="/pictures/jpg/img_resize.jpg"
+                        media="(min-width: 1040px)"
+                    />
+                    <source
+                        srcset="/pictures/png/imgtabl.png"
+                        media="(min-width: 767px)"
+                    />
+                    <source
+                        srcset="/pictures/png/img.png"
+                        media="(max-width: 767px)"
+                    />
+                    <img src="/pictures/jpg/img_resize.jpg" alt="cartoon" />
+                </picture>
+
+                <div class="notin-item__vrap-btn">
+                    <button class="notin-item__btn">
+                        <img
+                            class="notin-item__btn-svg notin-item__btn-svg__first-child"
+                            src="/pictures/svg/not.svg"
+                            alt=""
+                            srcset=""
+                        />Немає в наявності
+                    </button>
+                    <button class="notin-item__btn">
+                        <div class="heart">
+                            <i
+                                class="fa fa-heart-o card-item__btn-svg"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                        Додати до обраного
+                    </button>
+                </div>
+                <div class="notin-input-section">
+                    <div class="notin-input-wrap">
+                        <input class="notin-input" type="text" value="E-mail" />
+                        <button class="notin-input-btn" type="button">
+                            Відправити
+                        </button>
+                    </div>
+                    <p class="notin-item__vrap-p">
+                        Ми повідомимо Вам як тільки товар з'явится на складі.
+                        Залиште нам свою електронну адресу.
+                    </p>
+                </div>
+                <div class="notin-btn__div">
+                    <button class="notin-btn" type="button">
+                        Повідомити про наявність
+                    </button>
+                    <button class="notin-btn__accent" type="button">
+                        Замовити дзвінок
+                    </button>
+                </div>
+            </article>
+
+            <div class="chardiscr_wrap">
+                <div class="characteristic">
+                    <h3 class="information__title">Характеристика</h3>
+                    <p class="information__title-p">
+                        <span class="information__title-bold">Бренд: </span
+                        >gnghn
+                    </p>
+                    <p class="information__title-p">
+                        <span class="information__title-bold">Смак: </span>ghghn
+                    </p>
+                    <p class="information__title-p">
+                        <span class="information__title-bold">Об'єм: </span>700
+                        мл
+                    </p>
+                    <p class="information__title-p">
+                        <span class="information__title-bold">Вага: </span>300
+                        гр
+                    </p>
+                    <p class="information__title-p">
+                        <span class="information__title-bold"
+                            >Вид упаковки: </span
+                        >ккпік
+                    </p>
+                    <p class="information__title-p">
+                        <span class="information__title-bold"
+                            >Країна виробник: </span
+                        >Україна
+                    </p>
+                </div>
+                <div class="description">
+                    <h3 class="information__title">Опис товару</h3>
+                    <p class="information__title-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde assumenda iusto quas optio nemo facere ullam
+                        corporis. Alias mollitia obcaecati blanditiis aspernatur
+                        dignissimos, eaque laudantium, animi est rerum
+                        perspiciatis voluptate voluptatibus repellat, totam
+                        facilis architecto quibusdam. Soluta unde, totam, dolore
+                        voluptatem tempora, alias cumque corporis aperiam vero
+                        et in dignissimos.
+                    </p>
+                    <button class="description_btn" type="button">
+                        <img src="/pictures/svg/down.svg" alt="" srcset="" />
+                    </button>
+                </div>
+            </div>
+            <div class="information-wrap">
+                <div class="information">
+                    <h3 class="information__title">Доставка</h3>
+                    <p class="information__title-p">
+                        - До складу Нової Пошти, Ін Тайм, Делівері
+                    </p>
+                    <p class="information__title-p">- Самовивіз</p>
+                    <p class="information__title-p">- Адресна доставка</p>
+                </div>
+                <div class="information">
+                    <h3 class="information__title">Оплата</h3>
+                    <p class="information__title-p">- Готівкою при отриманні</p>
+                    <p class="information__title-p">
+                        - LIQPay (Visa/MasterCard)
+                    </p>
+                    <p class="information__title-p">- Оплата на карту банку</p>
+                </div>
+                <div class="information">
+                    <h3 class="information__title">Гарантія</h3>
+                    <p class="information__title-p">
+                        14 днів на обмін/повернення
+                    </p>
+                </div>
+            </div>
+            <div class="responsepeople">
+                <h3 class="response__title">Відгуки</h3>
+                <ul class="responsepeople-list">
+                    <li class="responsepeople-item">
+                        <img
+                            class="responsepeople-img"
+                            src="/pictures/svg/people.svg"
+                            alt=""
+                        />
+                        <div class="responsepeople-wrap">
+                            <div class="responsepeople-stars-wrap">
+                                <p class="responsepeople-name">
+                                    Антоненко Антон
+                                </p>
+                                <img
+                                    class="responsepeople-stars"
+                                    src="/pictures/svg/star.svg"
+                                    alt=""
+                                    sizes=""
+                                    srcset=""
+                                />
+                            </div>
+
+                            <p class="responsepeople-p">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi hic qui, veniam
+                                accusantium possimus illum dolore ad incidunt
+                                atque blanditiis, ipsum in dignissimos
+                                voluptatibus cupiditate rem saepe iure sed
+                                minima.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="responsepeople-item">
+                        <img
+                            class="responsepeople-img"
+                            src="/pictures/svg/people.svg"
+                            alt=""
+                        />
+                        <div class="responsepeople-wrap">
+                            <div class="responsepeople-stars-wrap">
+                                <p class="responsepeople-name">
+                                    Антоненко Антон
+                                </p>
+                                <img
+                                    class="responsepeople-stars"
+                                    src="/pictures/svg/star.svg"
+                                    alt=""
+                                    sizes=""
+                                    srcset=""
+                                />
+                            </div>
+
+                            <p class="responsepeople-p">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi hic qui, veniam
+                                accusantium possimus illum dolore ad incidunt
+                                atque blanditiis, ipsum in dignissimos
+                                voluptatibus cupiditate rem saepe iure sed
+                                minima.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="responsepeople-item">
+                        <img
+                            class="responsepeople-img"
+                            src="/pictures/svg/people.svg"
+                            alt=""
+                        />
+                        <div class="responsepeople-wrap">
+                            <div class="responsepeople-stars-wrap">
+                                <p class="responsepeople-name">
+                                    Антоненко Антон
+                                </p>
+                                <img
+                                    class="responsepeople-stars"
+                                    src="/pictures/svg/star.svg"
+                                    alt=""
+                                    sizes=""
+                                    srcset=""
+                                />
+                            </div>
+
+                            <p class="responsepeople-p">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi hic qui, veniam
+                                accusantium possimus illum dolore ad incidunt
+                                atque blanditiis, ipsum in dignissimos
+                                voluptatibus cupiditate rem saepe iure sed
+                                minima.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="btn">Залишити відгук</button>
+            </div>
+
+            <div class="sale">
+                <h3 class="sale__title">Акційні пропозиції</h3>
+                <ul class="sale__list">
+                    <li class="sale__list_togle"> <div class="sale__item">
+                        <h4 class="sale__item__h4">
+                            Сироп TM Pearl Tea Кокос 700 мл
+                        </h4>
+                        <img
+                            src="/pictures/png/Screenshot_1.png"
+                            alt=""
+                            class="sale__item__img"
+                        />
+
+                        <div class="sale__content">
+                            <div class="sale__item__text">
+                                <div>
+                                    <p class="sale__item__p">125uhh/1,en</p>
+                                    <p class="sale__item__p">125uhh1,en</p>
+                                </div>
+
+                                <p class="sale__item__p-bold">125uhh</p>
+                            </div>
+
+                            <div class="card-item__plusminus sale-help">
+                                <button>+</button>
+                                <div>1</div>
+                                <button>-</button>
+                            </div>
+                            <button class="card-btn__sale"  onclick="changeTextAndColor(this)">
+                                Купити
+                            </button>
+                        </div>
+                    </div></li>
+                    <li class="sale__list_togle"> <div class="sale__item">
+                        <h4 class="sale__item__h4">
+                            Сироп TM Pearl Tea Кокос 700 мл
+                        </h4>
+                        <img
+                            src="/pictures/png/Screenshot_1.png"
+                            alt=""
+                            class="sale__item__img"
+                        />
+
+                        <div class="sale__content">
+                            <div class="sale__item__text">
+                                <div>
+                                    <p class="sale__item__p">125uhh/1,en</p>
+                                    <p class="sale__item__p">125uhh1,en</p>
+                                </div>
+
+                                <p class="sale__item__p-bold">125uhh</p>
+                            </div>
+
+                            <div class="card-item__plusminus sale-help">
+                                <button>+</button>
+                                <div>1</div>
+                                <button>-</button>
+                            </div>
+                            <button class="card-btn__sale"  onclick="changeTextAndColor(this)">
+                                Купити
+                            </button>
+                        </div>
+                    </div></li>
+                    <li class="sale__list_togle"> <div class="sale__item">
+                        <h4 class="sale__item__h4">
+                            Сироп TM Pearl Tea Кокос 700 мл
+                        </h4>
+                        <img
+                            src="/pictures/png/Screenshot_1.png"
+                            alt=""
+                            class="sale__item__img"
+                        />
+
+                        <div class="sale__content">
+                            <div class="sale__item__text">
+                                <div>
+                                    <p class="sale__item__p">125uhh/1,en</p>
+                                    <p class="sale__item__p">125uhh1,en</p>
+                                </div>
+
+                                <p class="sale__item__p-bold">125uhh</p>
+                            </div>
+
+                            <div class="card-item__plusminus sale-help">
+                                <button>+</button>
+                                <div>1</div>
+                                <button>-</button>
+                            </div>
+                            <button class="card-btn__sale"  onclick="changeTextAndColor(this)">
+                                Купити
+                            </button>
+                        </div>
+                    </div></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer__up">
+                    <div class="footer__grid">
+                        <div class="footer__logo">
+                            <img
+                                src="/pictures/png/logo-footer.png"
+                                alt="logo-second"
+                                class="footer__logo--img"
+                            />
+                        </div>
+                        <p class="footer__tittle">
+                            Компанія “ПанСтакан“ пропонує Вашій увазі якісний
+                            одноразовий паперовий посуд. Популярні сиропи і
+                            топпінги. Дерев'яні і пластикові мішалки для кави і
+                            чаю. Великий ассортимент оригінальноі кави.
+                        </p>
+                        <div class="footer__input">
+                            <input
+                                class="footer__search"
+                                type="text"
+                                placeholder="Your Email"
+                            />
+                            <button class="footer__button" type="submit">
+                                Підписатися
+                            </button>
+                        </div>
+                        <div class="footer__social">
+                            <ul class="footer__social_ul">
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/instagram.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/facebook.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/twitter.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/whatsapp.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__down">
+                    <div class="footer__down_grid1">
+                        <h2 class="footer__name">
+                            Надійний партнер для <br />
+                            вашего кавового бізнесу
+                        </h2>
+                    </div>
+                    <div class="credit-cart footer__down_grid2">
+                        <div class="credit-cart__item">
+                            <img
+                                class="credit-cart__png"
+                                src="/pictures/png/visa.png"
+                                alt="visa"
+                            />
+                        </div>
+                        <div class="credit-cart__item">
+                            <img
+                                class="credit-cart__png"
+                                src="/pictures/png/mastercatt.png"
+                                alt="mastercart"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="footer__down_grid3">
+                        <div>
+                            <p class="footer__timeflow">
+                                Пн-Пт з 09.00 до 17.00
+                            </p>
+                            <p class="footer__timeflow">Сб-Нд: Вихідний</p>
+                        </div>
+                    </div>
+                    <div class="footer__down_grid4">
+                        <ul>
+                            <li>
+                                <a class="footer__timeflow" href="" type="tel"
+                                    >+38 (068) 477-20-16</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="" type="tel"
+                                    >+38 (063) 631-31-00</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >horekavip@gmai.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >brand.panstakan@gmai.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >opt.panstakan@gmail.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__down_grid5">
+                        <ul>
+                            <li>
+                                <a class="footer__timeflow" href="">Доставка</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Оплата</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Блог</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Повернення</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Договір публічної оферти</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Контакти</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Відгуки</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Карта проїзду</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__baner"></div>
+            </div>
+        </footer>
+        <script src="/js/heart.js"></script>
+        <script src="/js/coffe.js"></script>
+ 
+        <script src="/js/basket.js"></script>
+        <script src="/js/burger.js"></script>
+        <script src="/js/counters.js"></script>
+        <script src="/js/slider-hero.js"></script>
+        <script src="/js/change-button.js"></script>
+    </body>
+</html>

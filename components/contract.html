@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ПанСтакан</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Mulish&family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+
+        <link rel="stylesheet" href="../css/counters.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/contract.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header__top">
+                    <div>
+                        <a href=""
+                            ><img
+                                class="header__logo"
+                                src="/pictures/png/logologo.png"
+                                alt="logo"
+                        /></a>
+                    </div>
+                    <div class="header__search">
+                        <input class="header__input" type="text" />
+                        <button class="header__search_button" type="button">
+                            <img
+                                class="header__search--s"
+                                src="/pictures/svg/search.svg"
+                                alt="search"
+                            />
+                        </button>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__mail header__contact">
+                            <a href="mailto:brand.panstakan@gmail.com"
+                                ><img
+                                    class="header__mail--svg"
+                                    src="/pictures/svg/mail.svg"
+                                    alt="mail"
+                            /></a>
+                            <a
+                                class="header__mail--flex"
+                                href="mailto:brand.panstakan@gmail.com"
+                                ><span class="header__mail--email"
+                                    >E-mail:
+                                </span>
+                                <span class="header__mail--name"
+                                    >brand.panstakan@gmail.com</span
+                                ></a
+                            >
+                        </div>
+                        <div class="header__favorite header__contact">
+                            <a href=""
+                                ><img
+                                    class="header__favorite--svg"
+                                    src="/pictures/svg/favorite.svg"
+                                    alt="favorites"
+                            /></a>
+                        </div>
+                        <div class="header__basket header__contact">
+                            <a href="./basket.html">
+                                <img
+                                    class="header__basket--svg"
+                                    src="/pictures/svg/basket.svg"
+                                    alt="basket"
+                                />
+                                <span class="basket-counter">+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <!-- Бургер-иконка -->
+
+                        <img
+                            src="/pictures/svg/burger.svg"
+                            alt=""
+                            id="burger-icon"
+                        />
+
+                        <!-- Бургер-меню -->
+                        <div id="burger-menu">
+                            <ul class="header__link">
+                                <li>
+                                    <a
+                                        class="header__link--title"
+                                        href="./catalog.html"
+                                        >Каталог</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Акції</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Про нас</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Прайс</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- Кнопка закрытия меню -->
+                            <div id="close-btn">&times;</div>
+                        </div>
+
+                        <ul class="header__link" id="menu">
+                            <li>
+                                <a
+                                    class="header__link--title"
+                                    href="./catalog.html"
+                                    >Каталог</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header__link--title" href="">Акції</a>
+                            </li>
+                            <li>
+                                <a class="header__link--title" href=""
+                                    >Про нас</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header__link--title" href="">Прайс</a>
+                            </li>
+                            <li>
+                                <a class="header__link--title" href=""
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="header__options">
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Мова</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="1">Валюта</option>
+                                3
+                                <option value="2">Два</option>
+                                4
+                                <option value="3">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Профіль</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="nav-button">
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UA</button
+                            ><button type="button" class="nav-button__button">
+                                RU
+                            </button>
+                        </li>
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UAH</button
+                            ><button type="button" class="nav-button__button">
+                                USD
+                            </button>
+                        </li>
+                    </ul>
+                    <a class="nav-logo" href=""
+                        ><img
+                            class="nav-logo"
+                            src="/pictures/svg/user-log.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <div>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="/components/home-page.html">Головна</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/components/contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contract">
+                    <div>
+                        <h1 class="container__name">Договір оферти</h1>
+                        <h2 class="container__name">Загальні положення</h2>
+                    </div>
+                    <div class="contract-box">
+                        <div>
+                            <p class="contract-box__title">
+                                1.1. Справжня оферта, є офіційною пропозицією
+                                ФОП Пантелейчук Володимир Григорович, далі по
+                                тексту - «Продавець», укласти Договір
+                                купівлі-продажу товарів дистанційним способом,
+                                тобто через Інтернет-магазин, далі по тексту -
+                                «Договір», і розміщує Публічну оферту
+                                (пропозицію) на офіційному інтернет-сайті
+                                Продавця «https://panstakan.com.ua (далі -«
+                                Інтернет-сайт »).
+                            </p>
+                            <p class="contract-box__title">
+                                1.2. Моментом повного і безумовного прийняття
+                                Покупцем пропозиції Продавця (акцептом) укласти
+                                електронний договір купівлі-продажу товарів,
+                                вважається факт оплати Покупцем замовлення на
+                                умовах цього Договору, у строки та за цінами,
+                                вказаними на Інтернет-сайті Продавця.
+                            </p>
+                        </div>
+                        <h2 class="contract-box__name">Поняття і визначення</h2>
+                        <div>
+                            <div>
+                                <p class="contract-box__title">
+                                    2.1. У цій оферті, якщо контекст не вимагає
+                                    іншого, наведені нижче терміни мають таке
+                                    значення:
+                                </p>
+                                <ul class="contract-box__list">
+                                    <li class="contract-box__item">
+                                        <p
+                                            class="contract-box__title contract-box__cir"
+                                        >
+                                            «Товар» - моделі, аксесуари,
+                                            комплектуючі та супровідні предмети;
+                                        </p>
+                                    </li>
+                                    <li class="contract-box__item">
+                                        <p
+                                            class="contract-box__title contract-box__cir"
+                                        >
+                                            «Інтернет-магазин» - відповідно до
+                                            Закону України «про електронну
+                                            комерцію», засіб для подання або
+                                            реалізації товару, роботи або
+                                            послуги шляхом здійснення
+                                            електронної угоди.
+                                        </p>
+                                    </li>
+                                    <li class="contract-box__item">
+                                        <p
+                                            class="contract-box__title contract-box__cir"
+                                        >
+                                            «Продавець» - компанія, яка реалізує
+                                            товари, представлені на
+                                            Інтернет-сайті.
+                                        </p>
+                                    </li>
+                                    <li class="contract-box__item">
+                                        <p
+                                            class="contract-box__title contract-box__cir"
+                                        >
+                                            «Покупець» - фізична особа, що
+                                            уклала з Продавцем Договір на
+                                            умовах, викладених нижче.
+                                        </p>
+                                    </li>
+                                    <li class="contract-box__item">
+                                        <p
+                                            class="contract-box__title contract-box__cir"
+                                        >
+                                            «Замовлення» - вибір окремих позицій
+                                            з переліку товарів, зазначених
+                                            Покупцем при розміщенні замовлення і
+                                            проведенні оплати.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="citation">
+                            <div class="citation__container">
+                                <p class="citation__title">
+                                    Одні з нас обирають дорогий елітний чай,
+                                    іншим не подобається коли в чашці плаває
+                                    заварка, тому вони обирають пакетований
+                                    варіант чаю. На смакові вподобання чаю
+                                    впливає також і стать споживачів. Так,
+                                    чорний чай більше полюбляють чоловіки, а
+                                    зелений чай обирають переважно жінки.
+                                </p>
+                                <div class="citation__img">
+                                    <img
+                                        src="/pictures/svg/con-inverted-commas.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="citation__img">
+                                    <img
+                                        src="/pictures/svg/con-inverted-commas.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="after-pay">
+                            <div>
+                                <h3 class="after-pay__name">Післяплатою</h3>
+                            </div>
+                            <div>
+                                <div class="after-pay__box">
+                                    <p class="after-pay__cifr">0.1</p>
+                                    <p class="after-pay__title">
+                                        Оплата здійснюється за фактом отримання
+                                        товару у відділенні транспортних
+                                        компанії за готівковий розрахунок в
+                                        гривнях.
+                                    </p>
+                                </div>
+                                <div class="after-pay__box">
+                                    <p class="after-pay__cifr">0.2</p>
+                                    <p class="after-pay__title">
+                                        Прі не надходження коштів
+                                        Інтернет-магазин залишає за собою право
+                                        анулювати замовлення. Умови доставки
+                                        замовлення
+                                    </p>
+                                </div>
+                                <div class="after-pay__box">
+                                    <p class="after-pay__cifr">0.3</p>
+                                    <p class="after-pay__title">
+                                        Доставка товарів, придбаних в
+                                        Інтернет-магазині, здійснюється до
+                                        складів транспортних компаній, де і
+                                        здійснюється видача замовлень.
+                                    </p>
+                                </div>
+                                <div class="after-pay__box">
+                                    <p class="after-pay__cifr">0.4</p>
+                                    <p class="after-pay__title">
+                                        Разом із замовленням Покупцеві надаються
+                                        документи згідно законодавства України.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check">
+                            <div class="check__forma-label-div check__area">
+                                <h3
+                                    class="check__forma-title check__lable-name"
+                                >
+                                    Доставка
+                                </h3>
+                                <div class="select__header">
+                                    <span class="check__forma__current"
+                                        >-Виберіть значення-</span
+                                    >
+                                    <img
+                                        class="check__forma-svg"
+                                        src="/pictures/svg/1.svg"
+                                    />
+                                </div>
+                                <div class="check__forma-select">
+                                    <div class="check__forma-option">
+                                        <p>Самовивіз</p>
+                                    </div>
+                                    <div class="check__forma-option">
+                                        <p>Доставка ПанСтакан</p>
+                                    </div>
+                                    <div class="check__forma-option">
+                                        <p>Нова Пошта</p>
+                                    </div>
+                                    <div class="check__forma-option">
+                                        <p>Делівері</p>
+                                    </div>
+                                    <div class="check__forma-option">
+                                        <p>Укрпошта</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__up">
+                    <div class="footer__grid">
+                        <div class="footer__logo">
+                            <img
+                                src="/pictures/png/logo-footer.png"
+                                alt="logo-second"
+                                class="footer__logo--img"
+                            />
+                        </div>
+                        <p class="footer__tittle">
+                            Компанія “ПанСтакан“ пропонує Вашій увазі якісний
+                            одноразовий паперовий посуд. Популярні сиропи і
+                            топпінги. Дерев'яні і пластикові мішалки для кави і
+                            чаю. Великий ассортимент оригінальноі кави.
+                        </p>
+                        <div class="footer__input">
+                            <input
+                                class="footer__search"
+                                type="text"
+                                placeholder="Your Email"
+                            />
+                            <button class="footer__button" type="submit">
+                                Підписатися
+                            </button>
+                        </div>
+                        <div class="footer__social">
+                            <ul class="footer__social_ul">
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/instagram.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/facebook.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/twitter.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/whatsapp.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__down">
+                    <div class="footer__down_grid1">
+                        <h2 class="footer__name">
+                            Надійний партнер для <br />
+                            вашего кавового бізнесу
+                        </h2>
+                    </div>
+                    <div class="credit-cart footer__down_grid2">
+                        <div class="credit-cart__item">
+                            <img
+                                class="credit-cart__png"
+                                src="/pictures/png/visa.png"
+                                alt="visa"
+                            />
+                        </div>
+                        <div class="credit-cart__item">
+                            <img
+                                class="credit-cart__png"
+                                src="/pictures/png/mastercatt.png"
+                                alt="mastercart"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="footer__down_grid3">
+                        <div>
+                            <p class="footer__timeflow">
+                                Пн-Пт з 09.00 до 17.00
+                            </p>
+                            <p class="footer__timeflow">Сб-Нд: Вихідний</p>
+                        </div>
+                    </div>
+                    <div class="footer__down_grid4">
+                        <ul>
+                            <li>
+                                <a class="footer__timeflow" href="" type="tel"
+                                    >+38 (068) 477-20-16</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="" type="tel"
+                                    >+38 (063) 631-31-00</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >horekavip@gmai.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >brand.panstakan@gmai.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >opt.panstakan@gmail.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__down_grid5">
+                        <ul>
+                            <li>
+                                <a class="footer__timeflow" href="">Доставка</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Оплата</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Блог</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Повернення</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Договір публічної оферти</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Контакти</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Відгуки</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Карта проїзду</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__baner"></div>
+            </div>
+        </footer>
+
+        <script src="/js/basket.js"></script>
+        <script src="/js/burger.js"></script>
+        <script src="/js/counters.js"></script>
+
+        <script src="/js/chek-list.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ПанСтакан</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Mulish&family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/cart-item.css" />
+        <link rel="stylesheet" href="../css/catalog.css" />
+        <link rel="stylesheet" href="../css/category.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header__top">
+                    <div>
+                        <a href="/components/home-page.html"
+                            ><img
+                                class="header__logo"
+                                src="/pictures/png/logologo.png"
+                                alt="logo"
+                        /></a>
+                    </div>
+                    <div class="header__search">
+                        <input class="header__input" type="text" />
+                        <button class="header__search_button" type="button">
+                            <img
+                                class="header__search--s"
+                                src="/pictures/svg/search.svg"
+                                alt="search"
+                            />
+                        </button>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__mail header__contact">
+                            <a href="mailto:brand.panstakan@gmail.com"
+                                ><img
+                                    class="header__mail--svg"
+                                    src="/pictures/svg/mail.svg"
+                                    alt="mail"
+                            /></a>
+                            <a
+                                class="header__mail--flex"
+                                href="mailto:brand.panstakan@gmail.com"
+                                ><span class="header__mail--email"
+                                    >E-mail:
+                                </span>
+                                <span class="header__mail--name"
+                                    >brand.panstakan@gmail.com</span
+                                ></a
+                            >
+                        </div>
+                        <div class="header__favorite header__contact">
+                            <a href=""
+                                ><img
+                                    class="header__favorite--svg"
+                                    src="/pictures/svg/favorite.svg"
+                                    alt="favorites"
+                            /></a>
+                        </div>
+                        <div class="header__basket header__contact">
+                            <a href="./basket.html">
+                                <img
+                                    class="header__basket--svg"
+                                    src="/pictures/svg/basket.svg"
+                                    alt="basket"
+                                />
+                                <span class="basket-counter">+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <!-- Бургер-иконка -->
+
+                        <img
+                            src="/pictures/svg/burger.svg"
+                            alt=""
+                            id="burger-icon"
+                        />
+
+                        <!-- Бургер-меню -->
+                        <div id="burger-menu">
+                            <ul class="header__link">
+                                <li>
+                                    <a
+                                        class="header__link--title"
+                                        href="./catalog.html"
+                                        >Каталог</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Акції</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Про нас</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Прайс</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- Кнопка закрытия меню -->
+                            <div id="close-btn">&times;</div>
+                        </div>
+
+                        <ul class="header__link" id="menu">
+                            <li>
+                                <a
+                                    class="header__link--title"
+                                    href="./catalog.html"
+                                    >Каталог</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header__link--title" href="">Акції</a>
+                            </li>
+                            <li>
+                                <a class="header__link--title" href=""
+                                    >Про нас</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header__link--title" href="">Прайс</a>
+                            </li>
+                            <li>
+                                <a class="header__link--title" href=""
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="header__options">
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Мова</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="1">Валюта</option>
+                                3
+                                <option value="2">Два</option>
+                                4
+                                <option value="3">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Профіль</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="nav-button">
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UA</button
+                            ><button type="button" class="nav-button__button">
+                                RU
+                            </button>
+                        </li>
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UAH</button
+                            ><button type="button" class="nav-button__button">
+                                USD
+                            </button>
+                        </li>
+                    </ul>
+                    <a class="nav-logo" href=""
+                        ><img
+                            class="nav-logo"
+                            src="/pictures/svg/user-log.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="filter-box">
+                <div class="hero__img">
+                    <h1 class="hero__name">
+                        Брендування
+                        <br />
+                        <span class="hero__name_second">стаканів</span>
+                    </h1>
+                    <div class="hero__container">
+                        <picture class="">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="/pictures/jpg/header-baner-mob.jpg"
+                            />
+
+                            <source
+                                media="(min-width: 768px) and (max-width: 1023px)"
+                                srcset="/pictures/jpg/header-baner-tablet.jpg"
+                            />
+
+                            <source
+                                media="(min-width: 1024px)"
+                                srcset="/pictures/jpg/header-baner.jpg"
+                            />
+
+                            <img
+                                src="/pictures/jpg/header-baner-tablet.jpg"
+                                srcset="/pictures/jpg/header-baner.jpg"
+                                alt="Брендування стаканів"
+                            />
+                        </picture>
+                        <picture class="">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="/pictures/jpg/header-baner-mob.jpg"
+                            />
+
+                            <source
+                                media="(min-width: 768px) and (max-width: 1023px)"
+                                srcset="/pictures/jpg/header-baner-tablet.jpg"
+                            />
+
+                            <source
+                                media="(min-width: 1024px)"
+                                srcset="/pictures/jpg/header-baner.jpg"
+                            />
+
+                            <img
+                                src="/pictures/jpg/header-baner-tablet.jpg"
+                                srcset="/pictures/jpg/header-baner.jpg"
+                                alt="Брендування стаканів"
+                            />
+                        </picture>
+                        <picture class="">
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="/pictures/jpg/header-baner-mob.jpg"
+                            />
+
+                            <source
+                                media="(min-width: 768px) and (max-width: 1023px)"
+                                srcset="/pictures/jpg/header-baner-tablet.jpg"
+                            />
+
+                            <source
+                                media="(min-width: 1024px)"
+                                srcset="/pictures/jpg/header-baner.jpg"
+                            />
+
+                            <img
+                                src="/pictures/jpg/header-baner-tablet.jpg"
+                                srcset="/pictures/jpg/header-baner.jpg"
+                                alt="Брендування стаканів"
+                            />
+                        </picture>
+                    </div>
+
+                    <button class="hero__btn" type="submit">Замовити</button>
+
+                    <div class="hero__svg">
+                        <img
+                            class="hero__arrow arrow-left"
+                            src="/pictures/svg/arrow-left.svg"
+                            alt=""
+                        />
+                        <img
+                            class="hero__coffe full"
+                            src="/pictures/svg/coffe-full.svg"
+                            alt=""
+                        />
+                        <img
+                            class="hero__coffe empty"
+                            src="/pictures/svg/coffe-empty.svg"
+                            alt=""
+                        />
+                        <img
+                            class="hero__coffe empty empty-second"
+                            src="/pictures/svg/coffe-empty.svg"
+                            alt=""
+                        />
+                        <img
+                            class="hero__arrow arrow-right"
+                            src="/pictures/svg/arrow-right.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div></div>
+                </div>
+
+                <div class="second-nav">
+                    <a
+                        class="second-nav__link"
+                        href="/components/home-page.html"
+                        >Головна</a
+                    >
+                    <img
+                        class="second-nav__svg"
+                        src="/pictures/svg/arrow-right.svg"
+                        alt="right-arrow"
+                    />
+                    <a class="second-nav__link" href="">Каталог</a>
+                    <img
+                        class="second-nav__svg"
+                        src="/pictures/svg/arrow-right.svg"
+                        alt="right-arrow"
+                    />
+                    <a class="second-nav__link" href="">Акії</a>
+                </div>
+                <div class="filter">
+                    <div class="filter__head">
+                        <h2 class="filter__name">Фільтр</h2>
+                        <img
+                            class="filter__head_svg"
+                            src="/pictures/svg/arrow-right.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="filter-container">
+                        <div>
+                            <h3 class="filter-name__price">Ціна</h3>
+                        </div>
+                        <div class="price-range" id="price-range">
+                            <div class="price-range__container">
+                                <label for="min-price"></label>
+                                <input
+                                    type="number"
+                                    id="min-price"
+                                    class="min-price"
+                                    value="0"
+                                    pattern="\d*"
+                                    title="Введите только цифры"
+                                    min="0"
+                                />
+                                <span class="price-range__separator">-</span>
+                                <label for="max-price"></label>
+                                <input
+                                    type="number"
+                                    id="max-price"
+                                    class="max-price"
+                                    value="1000"
+                                    pattern="\d*"
+                                    title="Введите только цифры"
+                                    min="0"
+                                />
+                            </div>
+                            <div class="range-slider" id="range-slider">
+                                <div
+                                    id="slider-handle-min"
+                                    class="slider-handle"
+                                >
+                                    <div class="slider-handle__dot"></div>
+                                </div>
+                                <div
+                                    id="slider-handle-max"
+                                    class="slider-handle"
+                                >
+                                    <div class="slider-handle__dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="filter-sort">
+                                <li class="filter-sort__item">
+                                    <div class="filter-sort__container">
+                                        <input
+                                            class="filter-sort__input"
+                                            id="myCheckboxNew"
+                                            type="checkbox"
+                                        />
+                                        <label
+                                            class="filter-sort__name"
+                                            for="myCheckboxNew"
+                                        >
+                                            Новинки
+                                        </label>
+                                    </div>
+                                    <span class="filter-sort__counter">0</span>
+                                </li>
+                                <li class="filter-sort__item">
+                                    <div class="filter-sort__container">
+                                        <input
+                                            class="filter-sort__input"
+                                            id="myCheckboxPopular"
+                                            type="checkbox"
+                                        />
+                                        <label
+                                            class="filter-sort__name"
+                                            for="myCheckboxPopular"
+                                        >
+                                            Популярні
+                                        </label>
+                                    </div>
+                                    <span class="filter-sort__counter">0</span>
+                                </li>
+                                <li class="filter-sort__item">
+                                    <div class="filter-sort__container">
+                                        <input
+                                            class="filter-sort__input"
+                                            id="myCheckboxSpecial"
+                                            type="checkbox"
+                                        />
+                                        <label
+                                            class="filter-sort__name"
+                                            for="myCheckboxSpecial"
+                                        >
+                                            Акційні
+                                        </label>
+                                    </div>
+                                    <span class="filter-sort__counter">0</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-select">
+                            <h3 class="filter-select__name">Сортувати:</h3>
+                            <select class="filter-select__select" name="" id="">
+                                <option class="filter-select__options" value="">
+                                    Від дешевих до дорогих
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category__head">
+                        <h2 class="category__name">Категорія</h2>
+                        <img
+                            class="category__head_svg"
+                            src="/pictures/svg/arrow-right.svg"
+                            alt=""
+                        />
+                    </div>
+                    <ul class="category__list">
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Акції
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Брендування стаканів
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Товари патріотичні
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Паперові стакани одноразові
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Кришки для паперових стаканів
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Чай натуральний/ коктейлі/ соуси
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Пластикові стакани з купольною кришкою
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Сиропи для кави та коктейлів
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Кульки для bubble tea
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Гарячий шоколад/ Какао
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Чай заварний/ Пакетований
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Молоко та вершки
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Вода та напої
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Кава зернова/ Мелена / Розчинна
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Порційні продукти
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Супутні товари
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Серветки в асортименті
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Упаковка для їжі/ коробки для піцци
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Зефір/ вершки
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Засоби для чистки кавомашин
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Рукавички різні
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Посуд одноразовий
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Господарські товари
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Солодощі
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Топінги кондитерські
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Органайзери/ Диспенсери / Вивіски
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Джаги для молока/ барній інвентар
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Лампочки та батарейки
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Антисептик для рук / Дезинфектор
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Лотки блістери/ для ягід
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Продукти харчування
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="category-img">
+                            <div>
+                                <a class="category-img__name" href=""
+                                    >Пакети поліетиленові / паперові
+                                    <span class="filter-sort__counter">0</span>
+                                </a>
+                            </div>
+                        </li>
+                        <button class="category__toggle">
+                            <img
+                                class="category__toggle--img"
+                                src="/pictures/png/arrow-circle.png"
+                                alt=""
+                            />
+                            <span class="category__toggle--name"
+                                >Більше категорій</span
+                            >
+                        </button>
+                    </ul>
+                </div>
+                <div class="sale">
+                    <ul class="sale__list">
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle hidden">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle hidden">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle hidden">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle hidden">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle hidden">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sale__list_togle hidden">
+                            <div class="sale__item">
+                                <h4 class="sale__item__h4">
+                                    Сироп TM Pearl Tea Кокос 700 мл
+                                </h4>
+                                <img
+                                    src="/pictures/png/Screenshot_1.png"
+                                    alt=""
+                                    class="sale__item__img"
+                                />
+
+                                <div class="sale__content">
+                                    <div class="sale__item__text">
+                                        <div>
+                                            <p class="sale__item__p">
+                                                125uhh/1,en
+                                            </p>
+                                            <p class="sale__item__p">
+                                                125uhh1,en
+                                            </p>
+                                        </div>
+
+                                        <p class="sale__item__p-bold">125uhh</p>
+                                    </div>
+
+                                    <div class="card-item__plusminus sale-help">
+                                        <button>+</button>
+                                        <div>1</div>
+                                        <button>-</button>
+                                    </div>
+                                    <button
+                                        class="card-btn__sale"
+                                        onclick="changeTextAndColor(this)"
+                                    >
+                                        Купити
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="container-items__toggle">
+                        <button class="items__toggle" onclick="toggleItems()">
+                            Більше товарів
+                        </button>
+                    </div>
+                </div>
+                <div class="sale__desckription">
+                    <h3 class="sale__title">Акційії та розпродаж</h3>
+                    <div class="container-sale__paragraph">
+                        <p class="sale__paragraph">
+                            Цю категорію ми створили для того, щоб кожен наш
+                            клієнт знайшов для себе щось особливе - смачні
+                            солодощі для вашого закладу, паперові стакани з
+                            гарним принтом, тощо. Якщо вам потрібно вигідно
+                            купити продукцію компанії ПанСтакан, тоді завітайте
+                            в цей розділ. Мі раді кожном у нашому клієнту і
+                            обовʼязково порадимо вам щось цікавеньке.
+                        </p>
+                    </div>
+                    <div class="container-sale__paragraph">
+                        <h4 class="sale__paragraph">
+                            В цій категорії знаходяться різні товари від
+                            компаніі ПанСтакан з різними статусами:
+                        </h4>
+                        <p class="sale__paragraph">новинка</p>
+                        <p class="sale__paragraph">популярний товар</p>
+                        <p class="sale__paragraph">акційний товар зі знижкою</p>
+                    </div>
+                    <div>
+                        <p class="sale__paragraph">
+                            Ми постійно оновлюємо свій ассортимент, тому ви
+                            завжди знайдете цікаві новинки , або зможете
+                            побачити самі популярні товари обрані нашими
+                            клиєнтами. І самий улюблений статус товару зі
+                            знижкою. Знижки від 5% до 20% на різні товари.
+                            Одноразові паперові стаканчики дуже часто ви можете
+                            купити зі знижкою .
+                        </p>
+                    </div>
+                    <div class="container-sale__down">
+                        <img
+                            class="sale__down"
+                            src="/pictures/svg/down.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="sale__razom">
+                    <img
+                        src="/pictures/jpg/category-razom-mi-tablet.jpg"
+                        alt=""
+                    />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__up">
+                    <div class="footer__grid">
+                        <div class="footer__logo">
+                            <img
+                                src="/pictures/png/logo-footer.png"
+                                alt="logo-second"
+                                class="footer__logo--img"
+                            />
+                        </div>
+                        <p class="footer__tittle">
+                            Компанія “ПанСтакан“ пропонує Вашій увазі якісний
+                            одноразовий паперовий посуд. Популярні сиропи і
+                            топпінги. Дерев'яні і пластикові мішалки для кави і
+                            чаю. Великий ассортимент оригінальноі кави.
+                        </p>
+                        <div class="footer__input">
+                            <input
+                                class="footer__search"
+                                type="text"
+                                placeholder="Your Email"
+                            />
+                            <button class="footer__button" type="submit">
+                                Підписатися
+                            </button>
+                        </div>
+                        <div class="footer__social">
+                            <ul class="footer__social_ul">
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/instagram.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/facebook.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/twitter.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><img
+                                            src="/pictures/png/whatsapp.png"
+                                            alt=""
+                                            class="footer__social--svg"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__down">
+                    <div class="footer__down_grid1">
+                        <h2 class="footer__name">
+                            Надійний партнер для <br />
+                            вашего кавового бізнесу
+                        </h2>
+                    </div>
+                    <div class="credit-cart footer__down_grid2">
+                        <div class="credit-cart__item">
+                            <img
+                                class="credit-cart__png"
+                                src="/pictures/png/visa.png"
+                                alt="visa"
+                            />
+                        </div>
+                        <div class="credit-cart__item">
+                            <img
+                                class="credit-cart__png"
+                                src="/pictures/png/mastercatt.png"
+                                alt="mastercart"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="footer__down_grid3">
+                        <div>
+                            <p class="footer__timeflow">
+                                Пн-Пт з 09.00 до 17.00
+                            </p>
+                            <p class="footer__timeflow">Сб-Нд: Вихідний</p>
+                        </div>
+                    </div>
+                    <div class="footer__down_grid4">
+                        <ul>
+                            <li>
+                                <a class="footer__timeflow" href="" type="tel"
+                                    >+38 (068) 477-20-16</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="" type="tel"
+                                    >+38 (063) 631-31-00</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >horekavip@gmai.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >brand.panstakan@gmai.com</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="footer__timeflow"
+                                    href=""
+                                    type="mailto"
+                                    >opt.panstakan@gmail.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__down_grid5">
+                        <ul>
+                            <li>
+                                <a class="footer__timeflow" href="">Доставка</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Оплата</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Блог</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Повернення</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Договір публічної оферти</a
+                                >
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Контакти</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href="">Відгуки</a>
+                            </li>
+                            <li>
+                                <a class="footer__timeflow" href=""
+                                    >Карта проїзду</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__baner"></div>
+            </div>
+        </footer>
+
+        <script src="/js/basket.js"></script>
+        <script src="/js/burger.js"></script>
+
+        <script src="/js/slider-hero.js"></script>
+        <script src="/js/open-category.js"></script>
+        <script src="/js/filter-price.js"></script>
+
+        <script src="/js/burger.js"></script>
+        <script src="/js/change-button.js"></script>
+        <script src="/js/reset.js"></script>
+    </body>
+</html>
