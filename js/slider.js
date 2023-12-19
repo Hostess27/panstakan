@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 showSlide(currentSlide);
 
-                document.querySelector('.' + sliderData.class + '__svg[src="../pictures/svg/arrow-left.svg"]').addEventListener('click', prevSlide);
-                document.querySelector('.' + sliderData.class + '__svg[src="../pictures/svg/arrow-right.svg"]').addEventListener('click', nextSlide);
+                document.querySelector('.' + sliderData.class + '__svg[src="./pictures/svg/arrow-left.svg"]').addEventListener('click', prevSlide);
+                document.querySelector('.' + sliderData.class + '__svg[src="./pictures/svg/arrow-right.svg"]').addEventListener('click', nextSlide);
             } catch (error) {
                 console.error("An unexpected error occurred in initializeSlider function:", error);
             }
