@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 updateCoffeImages();
+                updateCoffeImages2()
             } catch (error) {
                 console.error("An unexpected error occurred in showSlide function:", error);
             }
@@ -63,7 +64,29 @@ document.addEventListener('DOMContentLoaded', function () {
                     coffeEmpty.src = "./pictures/svg/coffe-empty.svg";
                     coffeEmptySecond.src = "./pictures/svg/coffe-full.svg";
                 }
-            } catch (error) {
+            } 
+            catch (error) {
+                console.error("An unexpected error occurred in updateCoffeImages function:", error);
+            }
+        }
+
+        function updateCoffeImages2() {
+            try {
+                if (currentIndex % 3 === 0) {
+                    coffeFull.src = "../pictures/svg/coffe-full.svg";
+                    coffeEmpty.src = "../pictures/svg/coffe-empty.svg";
+                    coffeEmptySecond.src = "../pictures/svg/coffe-empty.svg";
+                } else if (currentIndex % 3 === 1) {
+                    coffeFull.src = "../pictures/svg/coffe-empty.svg";
+                    coffeEmpty.src = "../pictures/svg/coffe-full.svg";
+                    coffeEmptySecond.src = "../pictures/svg/coffe-empty.svg";
+                } else {
+                    coffeFull.src = "../pictures/svg/coffe-empty.svg";
+                    coffeEmpty.src = "../pictures/svg/coffe-empty.svg";
+                    coffeEmptySecond.src = "../pictures/svg/coffe-full.svg";
+                }
+            } 
+            catch (error) {
                 console.error("An unexpected error occurred in updateCoffeImages function:", error);
             }
         }
