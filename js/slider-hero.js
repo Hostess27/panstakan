@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 updateCoffeImages();
-                updateCoffeImages2()
+                updateCoffeImages2();
             } catch (error) {
                 console.error("An unexpected error occurred in showSlide function:", error);
             }
