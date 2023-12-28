@@ -1,6 +1,7 @@
 
 
 
+
 @media (max-width: 767px) {
     .hero__container {
         width: 100%;
@@ -1338,7 +1339,7 @@
         text-align: center;
     }
 
-    .new__cart_button,
+    /* .new__cart_button,
     .popular__cart_button,
     .special__cart_button,
     .kostet__cart_button,
@@ -1354,7 +1355,7 @@
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
-    }
+    } */
 
     .new__heard_svg,
     .popular__heard_svg,
@@ -2217,7 +2218,7 @@
         text-align: start;
     }
 
-    .new__cart_button,
+    /* .new__cart_button,
     .popular__cart_button,
     .special__cart_button,
     .kostet__cart_button,
@@ -2233,7 +2234,7 @@
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
-    }
+    } */
 
     .baners__sirop {
         margin-right: 25px;

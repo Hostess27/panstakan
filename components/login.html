@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ПанСтакан</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Mulish&family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/login.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header__top">
+                    <div>
+                        <a href=""
+                            ><img
+                                class="header__logo"
+                                src="../pictures/png/logologo.png"
+                                alt="logo"
+                        /></a>
+                    </div>
+                    <div class="header__search">
+                        <input class="header__input" type="text" />
+                        <button class="header__search_button" type="button">
+                            <img
+                                class="header__search--s"
+                                src="../pictures/svg/search.svg"
+                                alt="search"
+                            />
+                        </button>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__mail header__contact">
+                            <a href="mailto:brand.panstakan@gmail.com"
+                                ><img
+                                    class="header__mail--svg"
+                                    src="../pictures/svg/mail.svg"
+                                    alt="mail"
+                            /></a>
+                            <a
+                                class="header__mail--flex"
+                                href="mailto:brand.panstakan@gmail.com"
+                                ><span class="header__mail--email"
+                                    >E-mail:
+                                </span>
+                                <span class="header__mail--name"
+                                    >brand.panstakan@gmail.com</span
+                                ></a
+                            >
+                        </div>
+                        <div class="header__favorite header__contact">
+                            <a href=""
+                                ><img
+                                    class="header__favorite--svg"
+                                    src="../pictures/svg/favorite.svg"
+                                    alt="favorites"
+                            /></a>
+                        </div>
+                        <div class="header__basket header__contact">
+                            <a href="./components/basket.html">
+                                <img
+                                    class="header__basket--svg"
+                                    src="../pictures/svg/basket.svg"
+                                    alt="basket"
+                                />
+                                <span class="basket-counter">+</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <!-- Бургер-иконка -->
+
+                        <img
+                            src="../pictures/svg/burger.svg"
+                            alt=""
+                            id="burger-icon"
+                        />
+
+                        <!-- Бургер-меню -->
+                        <div id="burger-menu">
+                            <ul class="header__link">
+                                <li>
+                                    <a
+                                        class="header__link--title"
+                                        href="./components/catalog.html"
+                                        >Каталог</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="header__link--title"
+                                        href="./components/category.html"
+                                        >Акції</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="header__link--title" href=""
+                                        >Про нас</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="header__link--title"
+                                        href="./components/price.html"
+                                        >Прайс</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="header__link--title"
+                                        href="./components/contacts.html"
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- Кнопка закрытия меню -->
+                            <div id="close-btn">&times;</div>
+                        </div>
+
+                        <ul class="header__link" id="menu">
+                            <li>
+                                <a
+                                    class="header__link--title"
+                                    href="./components/catalog.html"
+                                    >Каталог</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="header__link--title"
+                                    href="./components/category.html"
+                                    >Акції</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header__link--title" href=""
+                                    >Про нас</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="header__link--title"
+                                    href="./components/price.html"
+                                    >Прайс</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="header__link--title"
+                                    href="./components/contacts.html"
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="header__options">
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Мова</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="1">Валюта</option>
+                                3
+                                <option value="2">Два</option>
+                                4
+                                <option value="3">Три</option>
+                                5
+                            </select>
+                        </li>
+                        <li>
+                            <select class="header__select">
+                                2
+                                <option value="">Профіль</option>
+                                3
+                                <option value="1">Два</option>
+                                4
+                                <option value="2">Три</option>
+                                5
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="nav-button">
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UA</button
+                            ><button type="button" class="nav-button__button">
+                                RU
+                            </button>
+                        </li>
+                        <li class="nav-button__list">
+                            <button type="button" class="nav-button__button">
+                                UAH</button
+                            ><button type="button" class="nav-button__button">
+                                USD
+                            </button>
+                        </li>
+                    </ul>
+                    <a class="nav-logo" href=""
+                        ><img
+                            class="nav-logo"
+                            src="../pictures/svg/user-log.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="../index.html">Головна</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../components/catalog.html"
+                            >особистий кабінет</a
+                        >
+                    </li>
+                    <li class="menu-item">
+                        <a href="../components/cart-item.html">ВХІД</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <div class="login-container" id="login-container">
+                        <form class="login-form" id="login-form">
+                            <label class="login-form__name" for="username"
+                                >Електронна пошта<span
+                                    class="login-form__name--accent"
+                                >
+                                    *</span
+                                ></label
+                            >
+                            <input
+                                class="login-form__input"
+                                type="text"
+                                id="username"
+                                name="username"
+                                required
+                                minlength="6"
+                                maxlength="30"
+                            />
+                            <span
+                                class="error-message"
+                                id="username-error"
+                            ></span>
+
+                            <label
+                                class="login-form__name login-form__name--sec"
+                                for="password"
+                                >Пароль<span
+                                    class="login-form__name--accent login-form__name--accsec"
+                                >
+                                    *</span
+                                ></label
+                            >
+                            <div class="password-container">
+                                <span
+                                    class="password-toggle"
+                                    onclick="togglePasswordVisibility()"
+                                >
+                                    <img
+                                        src="../pictures/svg/eye.svg"
+                                        alt="Показать пароль"
+                                        id="eye-icon"
+                                        class="eye-icon"
+                                    />
+                                </span>
+                                <input
+                                    class="login-form__input"
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    required
+                                    minlength="6"
+                                    maxlength="50"
+                                />
+                            </div>
+                            <span
+                                class="error-message"
+                                id="password-error"
+                            ></span>
+                            <a class="login-form__recower" href="#"
+                                >Забули пароль?</a
+                            >
+                        </form>
+                        <button
+                            class="login-container__button"
+                            type="button"
+                            onclick="login()"
+                        >
+                            Вхід
+                        </button>
+                    </div>
+                    <div class="login-social">
+                        <p class="login-social__name">Або за допомогою</p>
+                        <div class="login-social__box">
+                            <a href=""
+                                ><img
+                                    class="login-social__svg"
+                                    src="../pictures/svg/login-facebook.svg"
+                                    alt=""
+                                    srcset="" /></a
+                            ><a href=""
+                                ><img
+                                    class="login-social__svg"
+                                    src="../pictures/svg/login-google.svg"
+                                    alt=""
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="login-registration">
+                        <p class="login-registration__name">Немає акаунта?</p>
+                        <a class="login-registration__link" href=""
+                            >Зареєструйтеся зараз</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="../js/login.js"></script>
+    </body>
+</html>

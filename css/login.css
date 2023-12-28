@@ -1,0 +1,257 @@
+.container {
+    padding: 0px 15px 0px 15px;
+}
+
+.login {
+    background-color: var(--basket-item-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.login-container {
+    text-align: center;
+    width: 40%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+
+.login-form__name {
+    font-size: 16.667px;
+    font-family: "Montserrat";
+    color: var(--title-text-color);
+    font-variant: small-caps;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.login-form__name--sec {
+    margin-top: 30px;
+}
+
+.login-form__name--accent {
+    color: var(--accent-color);
+}
+
+.login-form__input {
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 100%;
+    height: 50px;
+}
+.login-form__input.error {
+    border: 1px solid red;
+    box-shadow: 0 0 1px 1px red;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    right: -20px; /* Подстройте этот отступ в зависимости от вашего дизайна */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.login-form__name.error,
+.login-form__name--accent.error,
+.login-form__name--accsec.error {
+    color: red;
+}
+
+.error-message {
+    font-size: 11.667px;
+    font-family: "Montserrat";
+
+    line-height: 1.2;
+
+    color: var(--table-gray-color);
+    margin-top: 5px;
+}
+
+.login-form__recower {
+    font-size: 11.667px;
+    font-family: "Montserrat";
+
+    color: var(--table-gray-color);
+    line-height: 1.2;
+
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.login-form__recower:hover,
+.login-form__recower:focus {
+    text-shadow: var(--primary-text-color) 1px 1px;
+}
+
+.login-container__button {
+    font-size: 19.12px;
+    font-family: "Montserrat";
+
+    font-variant: small-caps;
+    line-height: 1.2;
+
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    padding: 20px 90px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.eye-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.login-social__name {
+    font-size: 11.667px;
+    font-family: "Montserrat";
+
+    color: var(--table-gray-color);
+    line-height: 1.2;
+
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.login-social__box {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+.login-social__svg {
+    width: 40px;
+    height: 40px;
+}
+
+.login-registration {
+}
+.login-registration__name {
+    font-size: 16.67px;
+    font-family: "Montserrat";
+    color: var(--title-text-color);
+    font-variant: small-caps;
+    line-height: 1.2;
+    text-align: center;
+}
+.login-registration__link {
+    font-size: 16.67px;
+    font-family: "Montserrat";
+    color: var(--accent-color);
+    font-variant: small-caps;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.login-registration__link:hover,
+.login-registration__link:focus {
+    text-shadow: var(--primary-text-color) 1px 1px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .login {
+        background-color: var(--basket-item-color);
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .login-container {
+        text-align: center;
+        width: 80%;
+    }
+
+    .login-form__input {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        height: 30px;
+    }
+
+    .login-form__name {
+        font-size: 9px;
+
+        margin-bottom: 10px;
+    }
+
+    .password-toggle {
+        right: 0;
+    }
+    .login-container__button {
+        font-size: 10px;
+
+        padding: 10px 20px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+    .error-message {
+        font-size: 8px;
+        
+    }
+
+    .eye-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .login-form__recower {
+        font-size: 8px;
+
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .login-registration__name {
+        font-size: 12.67px;
+    }
+
+    .login-social__name {
+        font-size: 8px;
+
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .login-social__box {
+        padding-bottom: 50px;
+    }
+
+    .login-social__svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .login-registration__name {
+        font-size: 10px;
+    }
+    .login-registration__link {
+        font-size: 10px;
+    }
+}

@@ -122,6 +122,23 @@
         font-size: 8px;
     }
 
+    /* Выпадающая корзина */
+
+    .header__basket_mini {
+        position: absolute;
+        z-index: 333;
+
+        padding: 10px;
+        right: 0;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    /* Выпадающая корзина */
+
     .header__search_button {
         position: absolute;
         top: 8px;
@@ -337,6 +354,32 @@
         font-size: 14px;
     }
 
+    /* Выпадающая корзина */
+
+    .header__basket_mini {
+        position: absolute;
+        z-index: 333;
+
+        padding: 10px;
+        right: 0;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .header__basket:hover .header__basket_mini,
+    .header__basket:focus .header__basket_mini,
+    .header__basket:active .header__basket_mini {
+        background: lightgray;
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Выпадающая корзина */
+
     .header__search_button {
         position: absolute;
         top: 15px;
@@ -530,6 +573,33 @@
         border-radius: 50%;
         font-size: 14px;
     }
+
+/* Выпадающая корзина */
+
+.header__basket_mini {
+    position: absolute;
+    z-index: 333;
+
+    padding: 10px;
+    right: 0;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.header__basket:hover .header__basket_mini,
+.header__basket:focus .header__basket_mini,
+.header__basket:active .header__basket_mini {
+    background: lightgray;
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Выпадающая корзина */
+
     .header__search_button {
         position: absolute;
         top: 15px;
